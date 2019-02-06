@@ -1,0 +1,97 @@
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --regular: 400;
+    --bold: 700;
+    
+    --primary-color: #ff0066;
+    --secondary-color: #333333;
+    --background-color: #fafafa;
+
+    --code-text-color: #f8f8f8;
+    --code-background-color: #424242;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+}
+
+body * {
+    box-sizing: inherit;
+}
+
+
+//Primer Ejercicio
+
+$colours: '#ff0066', turquoise, blueviolet;
+
+.colors {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    animation: {name: change-colours; duration: 1.5s; iteration-count: infinite; animation-direction: alternate-reverse;}
+}
+
+@keyframes change-colours {
+    0% {background-color: unquote(nth($colours, 1));}
+    50% {background-color: nth($colours, 2);}
+    100% {background-color: nth($colours, 3);}
+}
+
+
+//Segundo Ejercicio
+
+.figures {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin square {
+   height: 300px;
+   width: 300px;
+   border: 0;
+   background-color: rgb(random(255), random(255), random(255));
+}
+
+@mixin list($list) {
+    $pos1: nth($list, 1);
+    $pos2: nth($list, 2);
+    $pos3: nth($list, 3);
+    $pos4: nth($list, 4);
+    border-top-left-radius: $pos1;
+    border-top-right-radius: $pos2;
+    border-bottom-left-radius: $pos3;
+    border-bottom-right-radius: $pos4;
+}
+
+$squareList: 
+    (1rem, 0.5rem, 2.25rem, 0),
+    (0, 1.5rem, 1.25rem, 3rem);
+
+.figure {
+    @include square;
+    @include list(nth($squareList, 1));
+    margin-right: 30px;
+}
+
+.figure2 {
+    @include square;
+    @include list(nth($squareList, 2));
+}
+
+//centrado general
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
