@@ -26,7 +26,6 @@ body * {
 
 .colors {
   border-radius: 50%;
-  border: 1px solid black;
   height: 300px;
   width: 300px;
   margin: 30px;
@@ -57,7 +56,7 @@ body * {
   height: 300px;
   width: 300px;
   border: 0;
-  background-color: #b7dab2;
+  background-color: #2e0d42;
   border-top-left-radius: 1rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 2.25rem;
@@ -68,10 +67,16 @@ body * {
   height: 300px;
   width: 300px;
   border: 0;
-  background-color: #cf6a3d;
+  background-color: #163595;
   border-top-left-radius: 0;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.25rem;
   border-bottom-left-radius: 3rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

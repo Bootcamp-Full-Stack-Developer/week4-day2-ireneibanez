@@ -35,7 +35,6 @@ $colours: '#ff0066', turquoise, blueviolet;
 
 .colors {
     border-radius: 50%;
-    border: 1px solid black;
     height: 300px;
     width: 300px;
     margin: 30px;
@@ -86,4 +85,12 @@ $squareList:
 .figure2 {
     @include square;
     @include list(nth($squareList, 2));
+}
+
+//centrado general
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
