@@ -56,22 +56,23 @@ body * {
   height: 300px;
   width: 300px;
   border: 0;
-  background-color: #2e0d42;
+  background-color: #485add;
   border-top-left-radius: 1rem;
   border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 2.25rem;
-  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 2.25rem;
+  border-bottom-right-radius: 0;
+  margin-right: 30px;
 }
 
 .figure2 {
   height: 300px;
   width: 300px;
   border: 0;
-  background-color: #163595;
+  background-color: #e496e1;
   border-top-left-radius: 0;
   border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.25rem;
-  border-bottom-left-radius: 3rem;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 3rem;
 }
 
 .content {

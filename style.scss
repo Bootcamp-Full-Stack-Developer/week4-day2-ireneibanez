@@ -69,8 +69,8 @@ $colours: '#ff0066', turquoise, blueviolet;
     $pos4: nth($list, 4);
     border-top-left-radius: $pos1;
     border-top-right-radius: $pos2;
-    border-bottom-right-radius: $pos3;
-    border-bottom-left-radius: $pos4;
+    border-bottom-left-radius: $pos3;
+    border-bottom-right-radius: $pos4;
 }
 
 $squareList: 
@@ -80,6 +80,7 @@ $squareList:
 .figure {
     @include square;
     @include list(nth($squareList, 1));
+    margin-right: 30px;
 }
 
 .figure2 {
